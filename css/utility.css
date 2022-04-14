@@ -1,0 +1,28 @@
+/* Utility Classes */
+:root {
+    --font1: 'Bree Serif', serif;
+    --font2: 'Baloo Bhai 2', cursive;
+}
+.h-primary {
+    font-family: var(--font1);
+    font-size: 3rem;
+    padding: 12px;
+}
+.h-secondary {
+    font-family: var(--font1);
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid #fff;
+    background-color: brown;
+    color: #fff;
+    margin: 20px;
+    font-size: 1.1rem;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+/* Utitlity CSS */
+.h-primary {
+	font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	/* Home Section */
+	#home {
+		padding: 3px 100px;
+		height: 95vh;
+		margin-bottom: -50px;
+	}
+
+	/* Services Section */
+	#services-box {
+		margin: 0px 5px;
+	}
+	#services-box .box {
+		padding: 20px;
+		margin: 12px 10px;
+	}
+	#services-box .box img {
+		height: 130px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	/* Home Section */
+	#home {
+		height: 98vh;
+	}
+
+}
+@media screen and (max-width: 767px) {
+	/* Nav section */
+	#navbar {
+		flex-direction: column;
+	}
+	#navbar ul {
+		padding: 0 0px 15px;
+		right: 0;
+	}
+	#navbar ul li a {
+		font-size: 1rem;
+		padding: 0 5px;
+	}
+
+	/* Home Section */
+	#home {
+		padding: 3px 20px;
+		margin-bottom: -50px;
+	}
+	
+	/* Services Section */
+	#services-box {
+		flex-direction: column;
+		margin: 0px 5px;
+	}
+	#services-box .box {
+		padding: 20px;
+		margin: 12px 10px;
+	}
+	#services-box .box img {
+		height: 130px;
+	}
+
+	/* Clients */
+	#client-section {
+		height: auto;
+	}
+	#clients {
+		flex-wrap: wrap;
+	}
+	#clients img {
+		width: 60px;
+	}
+
+	/* Contact */
+	#contact-box form {
+		width: 90%;
+	}
+	#contact-box input,
+	#contact-box textarea {
+		width: 90%;
+	}
+}

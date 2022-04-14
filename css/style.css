@@ -1,0 +1,212 @@
+/* =================
+    CSS Reset 
+================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* =================
+    Navigation Bar
+================= */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    justify-content: space-between;
+}
+#navbar::before {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* =================
+NavBar: Logo and Image
+================= */
+#logo {
+    margin: 0 50px;
+}
+#logo img {
+    height: 80px;
+    margin: 10px 20px;
+}
+
+
+/* =================
+NavBar: List Styling
+================= */
+#navbar ul {
+    display: flex;
+    font-family: var(--font2);
+    position: relative;
+    right: 100px;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* =================
+    Home Section
+================= */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../img/banner.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1 {
+    color: #fff;
+}
+#home p {
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--font2);
+}
+
+
+/* =================
+    Services Section
+================= */
+#services {
+    margin-bottom: 60px;
+}
+#services-box {
+    display: flex;
+    margin: 20px 35px;
+}
+#services-box .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 15px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+#services-box .box img {
+    height: 140px;
+    display: block;
+    margin: auto;
+}
+#services-box .box p {
+    font-family: var(--font1);
+}
+
+
+/* =================
+    Client Section
+================= */
+#client-section {
+    padding-top: 25px;
+    height: 280px;
+    position: relative;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(249, 216, 239, 0.4);
+    z-index: -1;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item {
+    margin: 20px;
+}
+#clients img {
+    width: 100px;
+}
+
+
+/* =================
+    Contact Section
+================= */
+#contact {
+    position: relative;
+    height: 640px;
+    padding-top: 20px;
+}
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    background: url('../img/contact-bg.jpg') no-repeat center center/cover;
+}
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box form {
+    width: 40%;
+}
+#contact-box label {
+    font-size: 1.3rem;
+}
+#contact-box input, #contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* =================
+    Footer
+================= */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+}
